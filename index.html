@@ -2,14 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Grid Layout</title>
   <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
   <script src="javascripts/jquery-2.0.3.js"></script>
 </head>
 <body>
-  <div class="grid">
+  <div class="container">
+    <div class="row">
+      <div class="six column">
+        <!-- content -->
+        <p>One</p>
+      </div>
+      <div class="six column">
+        <!-- content -->
+        <p>Two</p>
+      </div>      
+    </div>
+
+    <div class="row">
+      <div class="six column">
+        <!-- content -->
+        <p>Three</p>
+      </div>
+      <div class="six column">
+        <div class="row">
+          <div class="four column">
+            <!-- content -->
+            <p>Four - A</p>
+          </div>
+          <div class="four column end">
+            <!-- content -->
+            <p>Four - B</p>
+          </div>
+        </div>
+      </div>      
+    </div>
     
-  </div>
+    <div class="row">
+      <div class="four column">
+        <!-- content -->
+        <p>Five</p>
+      </div>
+      <div class="four column">
+        <!-- content -->
+        <p>Six</p>
+      </div>
+      <div class="four column">
+        <!-- content -->
+        <p>Seven</p>
+      </div>            
+    </div>            
+
+  </div><!-- END .container -->
 <footer>
   <script src="javascripts/script.js"></script>
 </footer> 
